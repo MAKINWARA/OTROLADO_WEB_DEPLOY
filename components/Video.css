@@ -1,0 +1,43 @@
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 5vh;
+  /* background-color: #d9d9d98b; */
+}
+
+.textMargin {
+  margin-top: 12vw;
+  margin-left: 8vw;
+  padding-bottom: 8vh;
+}
+
+h3 {
+  margin: 0;
+  font-size: 32px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 64px;
+}
+
+@media (width <= 375px) {
+  .videoContainer {
+    margin-bottom: 0;
+    justify-content: end;
+  }
+
+  .textMargin {
+    margin-left: 4vw;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}

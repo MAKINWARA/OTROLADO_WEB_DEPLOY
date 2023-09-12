@@ -1,0 +1,146 @@
+.aboutSection {
+  background-color: #fff;
+  color: black;
+}
+
+/* Second Section */
+
+.sectionTwo {
+  margin-right: 8vw;
+  margin-left: 8vw;
+  display: flex;
+  gap: 2vw;
+}
+
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 35vw;
+}
+
+.firstColumn > figure {
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 65vh;
+  margin: 0;
+}
+
+.firstColumn > p {
+  line-height: 38px;
+}
+
+.secondColumn {
+  width: 49vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: end;
+}
+
+.secondColumn > figure {
+  width: 100%;
+  height: 38vh;
+  background-color: #d9d9d9;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 17vw 17vw;
+  gap: 32px;
+}
+
+.square {
+  width: 17.3vw;
+  height: 17.3vw;
+  background-color: #d9d9d9;
+}
+
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+@media (width <= 1024px) {
+  .sectionTwo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .firstColumn {
+    width: 45vw;
+  }
+
+  .firstColumn > figure {
+    height: 52.5vh;
+  }
+
+  .firstColumn > p {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    text-align: start;
+    font-weight: 800;
+  }
+
+  .firstColumn > button {
+    padding-left: 20vw;
+    margin-top: 3vh;
+  }
+
+  .secondColumn {
+    align-items: start;
+    width: 55vw;
+  }
+}
+
+@media (width <= 375px) {
+  .sectionTwo {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .firstColumn {
+    width: 100vw;
+    gap: 2vh;
+  }
+
+  .firstFigure {
+    height: 58vh !important;
+  }
+
+  .secondFigure {
+    height: 30vh !important;
+  }
+
+  .secondColumn {
+    width: 100%;
+    align-items: end;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+  }
+
+  .square {
+    width: 48vw;
+    height: 48vw;
+  }
+
+  .secondColumn > p {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    text-align: start;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .secondColumn > button {
+    width: 50%;
+  }
+}

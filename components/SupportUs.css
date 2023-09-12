@@ -1,0 +1,25 @@
+.emailForm {
+  margin-left: 13vw;
+}
+
+.input_email {
+  height: 4vh;
+  width: 25vw;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #ffb68d;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.input_email:focus {
+  outline: none;
+}
+
+.input_submit_email {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin-left: 7vw;
+  font-size: 20px;
+}

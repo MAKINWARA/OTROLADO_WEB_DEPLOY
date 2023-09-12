@@ -1,0 +1,177 @@
+.productions {
+  background-color: #d9d9d9;
+  color: black;
+  width: 100%;
+}
+
+.productions > strong {
+  display: block;
+  font-size: 10.4vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.gallery {
+  margin: 0 8vw;
+  margin-top: 4vh;
+  display: flex;
+}
+
+.photos {
+  display: flex;
+  margin-left: 2vw;
+}
+
+/* Photo Grid */
+.photo_grid {
+  display: inherit;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vh;
+}
+
+.photo_grid > figure {
+  margin: 0;
+}
+
+.photo_grid_two {
+  display: inherit;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2vh;
+  position: relative;
+  right: 3.5vw;
+}
+
+.photo_grid_two > figure {
+  margin: 0;
+}
+
+/* Photos */
+.one {
+  width: 29vw;
+  height: 60vh;
+}
+
+.two {
+  width: 24vw;
+  height: 50vh;
+}
+
+.three {
+  width: 19vw;
+  height: 38vh;
+}
+
+.four {
+  width: 19vw;
+  height: 43vh;
+}
+
+.five {
+  width: 24vw;
+  height: 41vh;
+}
+
+/* Gallery floating text */
+.gallery_article > div {
+  margin: 0;
+  position: sticky;
+  top: 50px;
+}
+
+.gallery_article > div > h3 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #e17226;
+}
+
+.gallery_article > div > p {
+  margin-top: 5vh;
+  line-height: 32px;
+}
+
+/* Borrar despues */
+.beta {
+  background-color: #fff;
+}
+
+.qqq {
+  display: none;
+}
+
+@media (width <= 1024px) {
+  .productions > strong {
+    font-size: 18vw;
+    font-weight: 800;
+  }
+
+  .gallery {
+    margin: 0;
+  }
+
+  .photo_grid {
+    gap: 1vh;
+  }
+
+  .photo_grid_two {
+    gap: 1vh;
+    right: 5.9vw;
+  }
+
+  .one {
+    width: 31vw;
+    height: 32.5vh;
+  }
+
+  .two {
+    width: 24vw;
+    height: 27.5vh;
+  }
+
+  .three {
+    width: 22.6vw;
+    height: 22.7vh;
+  }
+
+  .four {
+    width: 22.6vw;
+    height: 22.7vh;
+  }
+
+  .five {
+    width: 30.1vw;
+    height: 22.7vh;
+  }
+
+  .gallery_article {
+    margin-left: -2vw;
+  }
+
+  .gallery_article > div > p {
+    margin-top: 2vh;
+    text-align: start;
+    padding-right: 6vw;
+  }
+}
+
+@media (width <= 375px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .photos {
+    display: block;
+    margin-left: 0;
+  }
+
+  .gallery_article {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .one {
+    width: 100vw;
+    height: 52vh;
+  }
+}

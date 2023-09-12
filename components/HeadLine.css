@@ -1,0 +1,98 @@
+.headLine {
+  margin-left: 13vw;
+  margin-bottom: 6vh;
+  margin-right: 8vw;
+  position: relative;
+  z-index: 10;
+}
+
+.headLine > h2 {
+  font-size: 40px;
+}
+
+.headLine > aside {
+  margin-top: 12vh;
+  width: 30%;
+  padding-left: 0.5rem;
+  margin-left: 0.9rem;
+  float: right;
+}
+
+.headLine > p {
+  margin-right: 0;
+  margin-top: 9vh;
+  margin-left: 2px;
+  max-width: 38vw;
+  line-height: 32px;
+}
+
+.shadowText {
+  z-index: -1;
+  font-size: 10vw;
+  position: absolute;
+  bottom: 10.5vh;
+  left: -130px;
+}
+
+@media (width <= 1440px) {
+  .shadowText {
+    bottom: 17vh;
+  }
+}
+
+@media (width <= 1024px) {
+  .headLine {
+    margin-bottom: 2vh;
+  }
+
+  .headLine > h2 {
+    font-size: 40px;
+  }
+
+  .headLine > aside {
+    margin-top: 6vh;
+  }
+
+  .headLine > p {
+    margin-right: 0;
+    margin-top: 5vh;
+    max-width: 50vw;
+  }
+
+  .shadowText {
+    font-size: 18vw;
+    font-weight: 800;
+    bottom: 80px;
+    left: -70px;
+  }
+}
+
+@media (width <= 375px) {
+  .headLine {
+    padding-top: 20vh;
+    margin-left: 4vw;
+    margin-right: 0;
+  }
+
+  .headLine > p {
+    max-width: 100%;
+  }
+
+  .headLine > h2 {
+    font-size: 28px;
+  }
+
+  .headLine > aside {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .shadowText {
+    font-size: 45vw;
+    font-weight: 700;
+    bottom: 290px;
+    left: -5px;
+  }
+}

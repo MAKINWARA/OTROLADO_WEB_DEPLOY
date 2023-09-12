@@ -19,7 +19,7 @@ export default function Productions() {
         shadowText={"03_"}
         shadowColor={"rgba(255, 255, 255, 0.5)"}
       />
-      {screen.width <= 375 ? (
+      {screen.width === 375 ? (
         <>
           <section className="gallery">
             <div className="photos">

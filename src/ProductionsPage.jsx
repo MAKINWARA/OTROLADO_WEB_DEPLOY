@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types'
 import './ProductionsPage.css'
 
 import HeadLine from '../components/HeadLine'
@@ -17,6 +18,10 @@ function Piece({ text }) {
   )
 }
 
+Piece.propTypes = {
+  text: PropTypes.string
+}
+
 function Baner({ text, title, orangeTitle }) {
   return (
     <article className='baner'>
@@ -27,6 +32,12 @@ function Baner({ text, title, orangeTitle }) {
       <p>{text}</p>
     </article>
   )
+}
+
+Baner.propTypes = {
+  text: PropTypes.string,
+  title: PropTypes.string,
+  orangeTitle: PropTypes.string
 }
 
 export default function ProductionsPage() {

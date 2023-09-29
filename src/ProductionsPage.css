@@ -134,3 +134,52 @@
     }
   }
 }
+
+@media (width <= 1024px) {
+  .productions_page {
+    & .headLine {
+      margin-bottom: 1vh;
+      & strong {
+        font-size: 10vw;
+        bottom: 2vh;
+      }
+    }
+
+    .paragraphs {
+      margin-top: initial;
+      margin-left: 4vw;
+      width: 92vw;
+    }
+  }
+
+  .piece {
+    margin: 3vh 0;
+    & aside {
+      width: 70.5vw;
+      & p {
+        padding: 11vh 5vw 4vw 5vw;
+      }
+      & .viewMore {
+        margin-top: 6vh;
+        width: 80%;
+        margin-right: 0vw;
+      }
+    }
+  }
+
+  .baner {
+    margin-left: 5vw;
+    & p {
+      width: 50%;
+      margin-top: 2.2vh;
+      margin-left: 3vw;
+    }
+  }
+
+  .slider {
+    & div {
+      right: 7vw;
+      width: 34vw;
+    }
+  }
+}

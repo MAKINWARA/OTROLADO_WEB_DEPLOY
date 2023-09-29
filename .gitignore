@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-package-lock.json
 
 node_modules
 dist
@@ -26,5 +25,3 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
-
-package-lock.json

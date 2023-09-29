@@ -1,0 +1,293 @@
+.about_page {
+  padding: 15vh 0;
+  color: #000;
+  background-color: #fff;
+  & .headLine {
+    margin-bottom: 9vh;
+    & strong {
+      left: -13vw;
+      bottom: -7.5vh;
+    }
+  }
+  & figure {
+    margin: 0;
+    background-color: #d9d9d9;
+  }
+}
+
+.blackScreen {
+  background-color: #000;
+  width: 100vw;
+  height: 62.7vh;
+}
+
+.historyDescription {
+  margin: 4.5vh 0;
+  margin-left: 8vw;
+  width: 75%;
+  & main {
+    display: flex;
+    justify-content: space-between;
+    & h4 {
+      line-height: 42px;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 60%;
+    }
+    & aside {
+      margin-top: 3vh;
+    }
+  }
+  & .paragraphs {
+    & div {
+      padding-top: 0vh;
+      padding-left: 10vw;
+      display: flex;
+      gap: 3vw;
+      & p {
+        line-height: 25px;
+        width: 100%;
+        & cite {
+          margin-top: 5vh;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.newExpirience {
+  margin: 20vh 0;
+  & main {
+    & .headLine {
+      margin-bottom: 7vh;
+      & strong {
+        bottom: 3vh;
+      }
+    }
+  }
+  & div {
+    height: 45.25vh;
+    display: flex;
+    justify-content: space-between;
+    & .photo_1 {
+      width: 28.65vw;
+    }
+    & .photo_2 {
+      width: 19.3vw;
+    }
+    & .photo_3 {
+      width: 12.4vw;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & figure {
+        height: 48%;
+      }
+    }
+    & .photo_4 {
+      color: #fff;
+      background-color: #d96b20;
+      width: 35.55vw;
+      display: inherit;
+      flex-direction: column;
+      & .text {
+        text-transform: uppercase;
+        font-size: 1.3vw;
+        width: 60%;
+        line-height: 42px;
+        margin-top: 8vh;
+        margin-left: 6.5vw;
+      }
+      & span {
+        & .viewMore {
+          float: right;
+          margin-right: 9vw;
+        }
+      }
+    }
+  }
+  & .paragraphs {
+    margin-top: 5vh;
+    margin-left: 8vw;
+    & div {
+      width: 55vw;
+      gap: 2vw;
+      & p {
+        line-height: 25px;
+        width: 100%;
+        & cite {
+          margin-top: 3vh;
+          float: right;
+          margin-right: 1vw;
+        }
+      }
+    }
+    & .viewMore {
+      width: max-content;
+      margin-top: 1vh;
+      margin-right: 9.5vw;
+    }
+  }
+}
+
+@media (width >= 1600px) {
+  .about_page {
+    padding: 15vh 0 10vh 0;
+  }
+
+  .historyDescription {
+    & main {
+      & h4 {
+        width: 50%;
+      }
+    }
+  }
+
+  .newExpirience {
+    margin: 20vh 0 0 0;
+    & div {
+      & .photo_4 {
+        & .text {
+          margin-top: 10.5vh;
+          margin-left: 6.5vw;
+        }
+
+        & span {
+          & .viewMore {
+            margin-top: 3vh;
+            margin-right: 11vw;
+          }
+        }
+      }
+    }
+
+    & .paragraphs {
+      & .viewMore {
+        margin-right: 11vw;
+      }
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .about_page {
+    padding: 15vh 0 2vh 0;
+    & .headLine {
+      & strong {
+        bottom: -6vh;
+      }
+    }
+  }
+
+  .blackScreen {
+    height: 46.5vh;
+  }
+
+  .historyDescription {
+    margin-left: 0vw;
+    width: 100%;
+    & main {
+      justify-content: center;
+      gap: 5vw;
+      & h4 {
+        font-size: 20px;
+        width: 60%;
+      }
+      & aside {
+        & .viewMore {
+          width: 100%;
+        }
+      }
+    }
+    & .paragraphs {
+      & div {
+        padding: 0 5vw;
+        & p {
+          line-height: 20px;
+          & cite {
+            margin-top: 2vh;
+          }
+        }
+      }
+    }
+  }
+
+  .newExpirience {
+    margin: 15vh 0 2vh 0;
+    & main {
+      & .headLine {
+        & strong {
+          font-size: 15vw;
+          bottom: 2vh;
+        }
+      }
+    }
+    & div {
+      height: max-content;
+      flex-wrap: wrap;
+      & .photo_1 {
+        width: 64.3vw;
+        height: 37vh;
+      }
+      & .photo_2 {
+        width: 34.1vw;
+      }
+      & .photo_3 {
+        margin-top: 1.6vw;
+        width: max-content;
+        flex-direction: row;
+        gap: 1.7vw;
+        & figure {
+          width: 28.4vw;
+          height: 22.65vh;
+        }
+      }
+      & .photo_4 {
+        margin-top: 1.6vw;
+        width: 39.7vw;
+        height: 22.65vh;
+        & .text {
+          text-transform: uppercase;
+          font-size: 1.3vw;
+          width: 80%;
+          line-height: 42px;
+          margin-top: 4vh;
+          margin-left: 5vw;
+        }
+        & span {
+          width: fit-content;
+          margin-left: 20vw;
+          & .viewMore {
+            margin: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+    & .paragraphs {
+      margin-left: 5vw;
+      margin-right: 5vw;
+      & div {
+        flex-wrap: nowrap;
+        width: 100vw;
+        & p {
+          line-height: 20px;
+          & cite {
+            margin-top: 3vh;
+            margin-right: 2vw;
+            float: right;
+          }
+        }
+      }
+      & .viewMore {
+        width: fit-content;
+        margin-top: 2vh;
+        margin-right: 0vw;
+        margin-left: 63vw;
+      }
+    }
+  }
+}

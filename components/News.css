@@ -1,5 +1,6 @@
-.newsSecction {
-  margin-bottom: 10vh;
+.newsSection {
+  padding-top: 20vh;
+  padding-bottom: 8.5vh;
 }
 
 .allImages > div > figure {
@@ -21,7 +22,6 @@ figure > div {
 .firstTwoImages {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
   align-items: end;
 }
 
@@ -32,13 +32,13 @@ figure > div {
 
 ._2 {
   width: 31.5vw;
-  height: 29.1vh;
+  height: 32vh;
 }
 
 .firstTwoImages > figure > figcaption {
   float: right;
   margin-right: 15px;
-  line-height: 32px;
+  line-height: 20px;
 }
 
 .lastTwoImages {
@@ -58,7 +58,7 @@ figure > div {
 
 .lastTwoImages > figure > figcaption {
   margin-left: 10px;
-  line-height: 32px;
+  line-height: 20px;
 }
 
 .caption {
@@ -68,6 +68,8 @@ figure > div {
 @media (width <= 1024px) {
   .allImages {
     flex-direction: column;
+    margin-top: 2vh;
+    gap: 0.2vh;
   }
 
   .firstTwoImages {
@@ -109,8 +111,9 @@ figure > div {
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 400px) {
   .allImages {
+    margin-top: 5vh;
     margin-left: 4vw;
     margin-right: 4vw;
   }
@@ -130,5 +133,9 @@ figure > div {
     width: 92vw;
     height: 39vh;
     margin: 0;
+  }
+
+  .caption {
+    font-size: 19px;
   }
 }

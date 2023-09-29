@@ -19,7 +19,7 @@ export default function AboutUs() {
         shadowText={"02_"}
         shadowColor={"rgba(0, 0, 0, 0.15)"}
       />
-      {screen.width <= 375 ? (
+      {screen.width <= 400 ? (
         <div className="sectionTwo">
           <div className="firstColumn">
             <figure className="firstFigure"></figure>

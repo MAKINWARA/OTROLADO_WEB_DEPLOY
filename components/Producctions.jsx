@@ -14,12 +14,12 @@ export default function Productions() {
         phrase={
           "Le invitamos a estar al corriente de nuestras novedades y no perderse ningún detalle de nuestras presentaciones, giras, talleres, eventos, oportunidades, etc. Sea parte de nuestro universo a cada instante."
         }
-        buttonText={"SEE OUR LATES PRODUCCTION"}
+        buttonText={"LATEST PRODUCCTION"}
         buttonColor={"Black"}
         shadowText={"03_"}
         shadowColor={"rgba(255, 255, 255, 0.5)"}
       />
-      {screen.width === 375 ? (
+      {screen.width <= 400 ? (
         <>
           <section className="gallery">
             <div className="photos">

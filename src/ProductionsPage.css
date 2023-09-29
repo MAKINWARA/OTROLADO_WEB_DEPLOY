@@ -1,0 +1,136 @@
+.productions_page {
+  padding: 7vh 0;
+  background-color: #fff;
+  color: #000;
+  & .headLine {
+    margin-top: 18vh;
+    margin-bottom: 12vh;
+    & strong {
+      left: -13.5vw;
+      bottom: -7.5vh;
+    }
+  }
+
+  .paragraphs {
+    margin-top: -2vh;
+    margin-bottom: 10vh;
+    margin-left: 12.5vw;
+    width: 58vw;
+    & div {
+      display: flex;
+      justify-content: space-around;
+      & p {
+        line-height: 25px;
+        width: 48%;
+        & cite {
+          margin-right: 2vw;
+          margin-top: 3vh;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.piece {
+  margin: 6vh 0;
+  width: 100vw;
+  height: 45.2vh;
+  display: flex;
+  background-color: #d9d9d9;
+  & div {
+    width: 100%;
+  }
+  & aside {
+    color: #fff;
+    width: 40.2vw;
+    background-color: #585858;
+    & p {
+      margin: 0;
+      padding: 3.5vw 3vw 3vw 3vw;
+      font-size: 20px;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+    & .viewMore {
+      float: right;
+      margin-right: 5.5vw;
+      & p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.baner {
+  margin-top: -1vh;
+  margin-left: 13vw;
+  display: flex;
+  & div {
+    & h4 {
+      line-height: 0.1;
+      text-align: right;
+    }
+  }
+  & p {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 500;
+    width: 39%;
+    margin-left: 2vw;
+    margin-top: 3.7vh;
+  }
+}
+
+.slider {
+  margin-bottom: 9vh;
+  background-color: #585858;
+  width: 100vw;
+  height: 64vh;
+  position: relative;
+  & div {
+    position: absolute;
+    bottom: 5vh;
+    right: 10vw;
+    width: 20vw;
+    & p {
+      color: #fff;
+      font-size: 22px;
+      text-transform: uppercase;
+      line-height: 36px;
+    }
+    & .viewMore {
+      margin-left: 2vw;
+    }
+  }
+}
+
+@media (width > 1600px) {
+  .productions_page {
+    & .headLine {
+      & strong {
+        bottom: -7vh;
+      }
+    }
+  }
+  .piece {
+    & aside {
+      & p {
+        padding: 6.5vw 4vw 4vw 4vw;
+        font-size: 22px;
+      }
+      & .viewMore {
+        & p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .baner {
+    & p {
+      margin-top: 1.5vh;
+      font-size: 22px;
+    }
+  }
+}

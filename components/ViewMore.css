@@ -15,17 +15,27 @@
 
 .viewMore > p {
   font-size: 20px;
+  white-space: pre-line;
+  text-align: start;
 }
 
 @media (width <= 1024px) {
   .viewMore {
     width: 90%;
   }
-}
 
-@media (width <= 375px) {
   .viewMore > p {
     font-size: 16px;
-    width: 100%;
+  }
+}
+
+@media (width <= 400px) {
+  .viewMore {
+    margin: 0;
+  }
+
+  .viewMore > p {
+    font-size: 14px;
+    width: fit-content;
   }
 }

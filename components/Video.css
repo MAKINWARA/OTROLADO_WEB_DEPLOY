@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin-bottom: 5vh;
-  /* background-color: #d9d9d98b; */
+  background-size: 100vw;
 }
 
 .textMargin {
@@ -23,7 +22,7 @@ h2 {
   font-size: 64px;
 }
 
-@media (width <= 375px) {
+@media (width <= 400px) {
   .videoContainer {
     margin-bottom: 0;
     justify-content: end;
@@ -31,6 +30,10 @@ h2 {
 
   .textMargin {
     margin-left: 4vw;
+  }
+
+  .textMargin > button {
+    margin-left: 8vw;
   }
 
   h3 {

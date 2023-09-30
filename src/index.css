@@ -35,7 +35,7 @@ body {
   }
 }
 
-@media (width <= 390px) {
+@media (width <= 425px) {
   .section_padding {
     padding-top: 5vh;
   }
@@ -43,5 +43,9 @@ body {
   figure {
     margin: 0;
     margin-bottom: 1vh;
+  }
+
+  h4 {
+    font-size: 30px;
   }
 }

@@ -111,7 +111,7 @@ figure > div {
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 425px) {
   .allImages {
     margin-top: 5vh;
     margin-left: 4vw;

@@ -26,8 +26,8 @@ function Baner({ text, title, orangeTitle }) {
   return (
     <article className='baner'>
       <div>
-        <h4 style={{ fontSize: '40px' }}>{title}</h4>
-        <h4 style={{ fontSize: '40px', color: '#e17226' }}>{orangeTitle}</h4>
+        <h4>{title}</h4>
+        <h4 style={{ color: '#e17226' }}>{orangeTitle}</h4>
       </div>
       <p>{text}</p>
     </article>

@@ -47,7 +47,7 @@
     background-color: #585858;
     & p {
       margin: 0;
-      padding: 3.5vw 3vw 3vw 3vw;
+      padding: 6vw 3vw 3vw 3vw;
       font-size: 20px;
       line-height: 42px;
       text-transform: uppercase;
@@ -68,6 +68,7 @@
   display: flex;
   & div {
     & h4 {
+      font-size: 40px;
       line-height: 0.1;
       text-align: right;
     }
@@ -117,7 +118,7 @@
   .piece {
     & aside {
       & p {
-        padding: 6.5vw 4vw 4vw 4vw;
+        padding: 6vw 4vw 4vw 4vw;
         font-size: 22px;
       }
       & .viewMore {
@@ -157,10 +158,10 @@
     & aside {
       width: 70.5vw;
       & p {
-        padding: 11vh 5vw 4vw 5vw;
+        padding: 8vh 3vw 4vw 5vw;
       }
       & .viewMore {
-        margin-top: 6vh;
+        margin-top: 0vh;
         width: 80%;
         margin-right: 0vw;
       }
@@ -180,6 +181,68 @@
     & div {
       right: 7vw;
       width: 34vw;
+    }
+  }
+}
+
+@media (width <= 425px) {
+  .productions_page {
+    & .headLine {
+      padding-top: 5vh;
+      margin-top: 5vh;
+      & strong {
+        font-size: 12vw;
+        bottom: 7vh;
+        left: -3vw;
+      }
+    }
+    .paragraphs {
+      & div {
+        flex-direction: column;
+        & p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .piece {
+    flex-direction: column;
+    height: 100%;
+    & div {
+      height: 54vh;
+    }
+    & aside {
+      width: fit-content;
+      padding: 8vw;
+      & p {
+        padding: 0;
+      }
+      & .viewMore {
+        float: none;
+        margin-top: 4vh;
+        width: 100%;
+      }
+    }
+  }
+
+  .baner {
+    flex-direction: column;
+    & div {
+      & h4 {
+        font-size: 8vw;
+        text-align: left;
+      }
+    }
+    & p {
+      margin-left: 0;
+      width: 95%;
+    }
+  }
+
+  .slider {
+    & div {
+      display: none;
     }
   }
 }
